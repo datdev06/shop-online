@@ -94,3 +94,20 @@ input:focus, textarea:focus { outline: 2px solid #7aa2ff44; outline-offset: 2px;
 /* Utilities */
 .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
 .hidden { display: none !important; }
+
+/* --- Fix màu ở dark mode --- */
+@media (prefers-color-scheme: dark) {
+  /* Giữ header tối + chữ trắng rõ */
+  .header { background:#111; }
+  .brand, .menu-item { color:#fff; }
+
+  /* Nút chính: nền sáng -> chữ đen để tương phản */
+  .btn { background:#e6e6e6; border-color:#e6e6e6; color:#111; }
+  .btn.secondary { background:transparent; border-color:#333; color:#eee; }
+
+  /* Bảng & đường viền hơi đậm hơn */
+  :root {
+    --border: #262a30;
+    --card: #111215;
+  }
+}
