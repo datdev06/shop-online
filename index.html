@@ -3,44 +3,46 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light dark">
+  <meta name="color-scheme" content="dark">
   <title>Trang chủ · Shop Online</title>
-  <link rel="preload" href="style.css" as="style">
   <link rel="stylesheet" href="style.css">
   <script defer src="app.js"></script>
 </head>
 <body>
-  <header class="header" role="banner">
+  <header class="header">
     <div class="container nav">
-      <a class="brand" href="index.html" aria-label="Trang chủ">Shop Online</a>
-      <nav class="menu" aria-label="Điều hướng chính">
-        <a class="menu-item is-active" href="index.html" aria-current="page">Trang chủ</a>
+      <a class="brand" href="index.html">Shop Online</a>
+      <nav class="menu">
+        <a class="menu-item is-active" href="index.html">Trang chủ</a>
         <a class="menu-item" href="catalog.html">Danh mục sản phẩm</a>
         <a class="menu-item" href="cart.html">Giỏ hàng <span data-cart-count class="badge"></span></a>
       </nav>
     </div>
   </header>
 
-  <main class="container flow" id="main">
-    <section class="hero">
-      <div class="hero-body">
+  <main class="container flow">
+    <section class="hero hero-grid">
+      <div class="hero-copy">
         <h1 class="title">Chào mừng đến với <span class="highlight">Shop Online</span></h1>
         <p class="subtitle">Cửa hàng linh kiện & phụ kiện điện tử. Giá tốt, thêm vào giỏ là xong!</p>
         <p><a class="btn" href="catalog.html">Khám phá sản phẩm</a></p>
       </div>
+      <div class="hero-art">
+        <div class="hero-card"></div>
+      </div>
     </section>
 
-    <section class="section">
+    <section class="section features">
       <h2 class="section-title">Vì sao chọn chúng tôi?</h2>
       <ul class="feature-list">
-        <li>Hệ thống giỏ hàng lưu bằng <code>localStorage</code> — chạy tĩnh 100%.</li>
-        <li>Bố cục gọn đẹp, dùng được trên điện thoại.</li>
+        <li>Giỏ hàng lưu bằng <code>localStorage</code> — chạy tĩnh 100%.</li>
+        <li>Responsive: đẹp trên điện thoại và máy tính.</li>
         <li>Dễ triển khai với GitHub Pages.</li>
       </ul>
     </section>
   </main>
 
-  <footer class="footer" role="contentinfo">
+  <footer class="footer">
     <div class="container">© 2025 · Shop Online</div>
   </footer>
 </body>
