@@ -3,30 +3,32 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light dark">
+  <meta name="color-scheme" content="dark">
   <title>Danh mục sản phẩm · Shop Online</title>
-  <link rel="preload" href="style.css" as="style">
   <link rel="stylesheet" href="style.css">
   <script defer src="app.js"></script>
 </head>
 <body>
-  <header class="header" role="banner">
+  <header class="header">
     <div class="container nav">
-      <a class="brand" href="index.html" aria-label="Trang chủ">Shop Online</a>
-      <nav class="menu" aria-label="Điều hướng chính">
+      <a class="brand" href="index.html">Shop Online</a>
+      <nav class="menu">
         <a class="menu-item" href="index.html">Trang chủ</a>
-        <a class="menu-item is-active" href="catalog.html" aria-current="page">Danh mục sản phẩm</a>
+        <a class="menu-item is-active" href="catalog.html">Danh mục sản phẩm</a>
         <a class="menu-item" href="cart.html">Giỏ hàng <span data-cart-count class="badge"></span></a>
       </nav>
     </div>
   </header>
 
-  <main class="container flow" id="main">
-    <h1 class="page-title">Danh mục sản phẩm</h1>
-    <div data-catalog class="grid" aria-live="polite"></div>
+  <main class="container flow">
+    <div class="page-head">
+      <h1 class="page-title">Danh mục sản phẩm</h1>
+      <a class="btn secondary" href="cart.html">Xem giỏ (<span data-cart-count></span>)</a>
+    </div>
+    <div data-catalog class="grid"></div>
   </main>
 
-  <footer class="footer" role="contentinfo">
+  <footer class="footer">
     <div class="container">© 2025 · Shop Online</div>
   </footer>
 </body>
