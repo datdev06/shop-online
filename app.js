@@ -4,12 +4,12 @@ const CURRENCY = "đ";
 
 // Demo sản phẩm
 const PRODUCTS = [
-  { id: "machdien-001", title: "Mạch điện", price: 100000, image: "https://via.placeholder.com/640x400?text=Mach+dien", category: "Đồ Điện" },
-  { id: "pin-du-phong-400", title: "Pin dự phòng 20.000mAh", price: 400000, image: "https://via.placeholder.com/640x400?text=Pin+du+phong+20k+mAh", category: "Pin" },
   { id: "pin-aa", title: "Pin AA 2 viên", price: 20000, image: "https://via.placeholder.com/640x400?text=Pin+AA", category: "Pin" },
   { id: "pin-du-phong-200", title: "Pin dự phòng 10.000mAh", price: 200000, image: "https://via.placeholder.com/640x400?text=Pin+du+phong+10k+mAh", category: "Pin" },
-  { id: "arduino", title: "Mạch Arduino", price: 150000, image: "https://via.placeholder.com/640x400?text=Arduino", category: "⚡ Mạch điện" },
-  { id: "raspberry", title: "Mạch Raspberry Pi", price: 300000, image: "https://via.placeholder.com/640x400?text=Raspberry+Pi", category: "⚡ Mạch điện" },
+  { id: "pin-du-phong-400", title: "Pin dự phòng 20.000mAh", price: 400000, image: "https://via.placeholder.com/640x400?text=Pin+du+phong+20k+mAh", category: "Pin" },
+  { id: "machdien-001", title: "Mạch điện", price: 100000, image: "https://via.placeholder.com/640x400?text=Mach+dien", category: "Mạch điện" },
+  { id: "arduino", title: "Mạch Arduino", price: 150000, image: "https://via.placeholder.com/640x400?text=Arduino", category: "Mạch điện" },
+  { id: "raspberry", title: "Mạch Raspberry Pi", price: 300000, image: "https://via.placeholder.com/640x400?text=Raspberry+Pi", category: " Mạch điện" },
 ];
 
 // ====== Helpers ======
