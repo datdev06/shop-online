@@ -93,3 +93,18 @@ input:focus, textarea:focus { outline: 2px solid #7aa2ff44; outline-offset: 2px;
 /* Utilities */
 .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
 .hidden { display: none !important; }
+
+/* Mobile mặc định */
+.grid { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+
+/* Tablet / Desktop */
+@media (min-width: 900px) {
+  .grid { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+  .hero-grid { grid-template-columns: 1.1fr .9fr; }
+  .hero-art { display:block; }
+}
+
+/* Desktop rộng */
+@media (min-width: 1280px) {
+  .grid { grid-template-columns: repeat(4, 1fr); }
+}
