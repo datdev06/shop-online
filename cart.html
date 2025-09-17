@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Giỏ hàng · Shop Online</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">SHOP<span>ONLINE</span></a>
+      <nav class="nav">
+        <a href="index.html">Trang chủ</a>
+        <a href="catalog.html">Sản phẩm</a>
+        <a class="active" href="cart.html" class="cart-link">Giỏ hàng <span id="cart-count" class="badge">0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <div class="section-head">
+        <h1>Giỏ hàng</h1>
+        <a class="link" href="catalog.html">Tiếp tục mua</a>
+      </div>
+
+      <div id="cart-empty" class="empty hidden">
+        <p>Giỏ hàng của bạn đang trống.</p>
+        <a class="btn" href="catalog.html">Mua ngay</a>
+      </div>
+
+      <div id="cart-table-wrap" class="cart-table hidden">
+        <div class="cart-head row">
+          <div>Sản phẩm</div>
+          <div class="right">Đơn giá</div>
+          <div class="center">SL</div>
+          <div class="right">Thành tiền</div>
+          <div></div>
+        </div>
+        <div id="cart-rows"></div>
+        <div class="cart-foot row">
+          <div></div>
+          <div></div>
+          <div class="right"><strong>Tổng:</strong></div>
+          <div class="right"><strong id="cart-total">0</strong></div>
+          <div></div>
+        </div>
+        <div class="actions">
+          <button id="clear-cart" class="btn btn-ghost">Xoá giỏ</button>
+          <button id="checkout" class="btn">Thanh toán</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2025 SHOPONLINE</p>
+    </div>
+  </footer>
+</body>
+</html>

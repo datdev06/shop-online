@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Danh mục · Shop Online</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">SHOP<span>ONLINE</span></a>
+      <nav class="nav">
+        <a href="index.html">Trang chủ</a>
+        <a class="active" href="catalog.html">Sản phẩm</a>
+        <a href="cart.html" class="cart-link">Giỏ hàng <span id="cart-count" class="badge">0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <div class="section-head">
+        <h1>Tất cả sản phẩm</h1>
+        <div class="filters">
+          <input id="q" class="input" placeholder="Tìm: pin, cáp, module..." />
+          <select id="cat" class="select">
+            <option value="">Tất cả danh mục</option>
+            <option value="powerbank">Pin sạc</option>
+            <option value="cable">Cáp & sạc</option>
+            <option value="module">Module điện tử</option>
+            <option value="accessory">Phụ kiện</option>
+          </select>
+        </div>
+      </div>
+      <div id="catalog-grid" class="grid products"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2025 SHOPONLINE</p>
+    </div>
+  </footer>
+</body>
+</html>
